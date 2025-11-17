@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(dir /s /b /a:d)",
+      "Bash(findstr:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

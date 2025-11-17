@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: data-platform-app
+    ports:
+      - "8000:8000"
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+    volumes:
+      - ./src:/app/src
+    depends_on:
+      - db
+    networks:
+      - data-platform-network
+
+  db:
+    image: postgres:15-alpine
+    container_name: data-platform-db
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin123
+      - POSTGRES_DB=data_platform
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - data-platform-network
+
+volumes:
+  postgres_data:
+
+networks:
+  data-platform-network:
+    driver: bridge
