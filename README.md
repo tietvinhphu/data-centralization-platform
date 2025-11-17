@@ -166,12 +166,12 @@ print(result)
 ```
 ┌─────────────────────────────────────────────────────────┐
 │                    Client Layer                         │
-│   [Web UI] [Python SDK] [CLI] [REST API] [GraphQL]    │
+│   [Web UI] [Python SDK] [CLI] [REST API] [GraphQL]      │
 └────────────────────┬────────────────────────────────────┘
                      │
 ┌────────────────────▼────────────────────────────────────┐
 │               API Gateway + Auth                        │
-│        [FastAPI] [JWT] [Rate Limiting]                 │
+│        [FastAPI] [JWT] [Rate Limiting]                  │
 └────────────────────┬────────────────────────────────────┘
                      │
       ┌──────────────┼──────────────┐
@@ -191,9 +191,9 @@ print(result)
    ┌────────────┼────────────┐
    │            │            │
 ┌──▼───┐   ┌───▼────┐   ┌──▼──────┐
-│ Data │   │ Data   │   │Metadata │
-│ Lake │   │Warehouse  │ Store   │
-│[MinIO│   │ClickHouse │  [PG]   │
+│ Data │   │ Data   │   │ Metadata│
+│ Lake │   │Warehouse   │  Store  │
+│[MinIO│   │ClickHouse  │  [PG]   │
 └──────┘   └────────┘   └─────────┘
 ```
 
