@@ -23,10 +23,12 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual environments
-.venv/
-venv/
-ENV/
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
 
 # IDE
 .vscode/
@@ -34,29 +36,34 @@ ENV/
 *.swp
 *.swo
 *~
-
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
-.tox/
-
-# Git
-.git/
-.gitignore
+.DS_Store
 
 # Environment
 .env
 .env.local
+.env.*.local
+
+# Data
+data/
+logs/
+tmp/
+*.db
+*.sqlite
+
+# Git
+.git/
+.gitignore
+.gitattributes
 
 # Documentation
-docs/
+docs/_build/
 *.md
+
+# Docker
+Dockerfile
+docker-compose*.yml
+.dockerignore
 
 # CI/CD
 .github/
-
-# Other
-*.log
-.DS_Store
-Thumbs.db
+.gitlab-ci.yml
