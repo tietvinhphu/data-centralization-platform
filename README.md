@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Logo](https://via.placeholder.com/800x200/0066cc/ffffff?text=Data+Fusion+Platform)
+![Logo](images/data-fusion-platform-tietvinhphu.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
