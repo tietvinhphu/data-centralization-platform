@@ -293,10 +293,7 @@ Need help? We offer:
 
 ## 📞 Contact & Community
 
-- 📧 **Email**: hello@datafusionplatform.com
-- 💬 **Discord**: [Join our community](https://discord.gg/datafusion)
-- 🐦 **Twitter**: [@DataFusionHQ](https://twitter.com/datafusionhq)
-- 📝 **Blog**: [blog.datafusionplatform.com](https://blog.datafusionplatform.com)
+- 📧 **Email**: tietvinhphu@gmail.com
 
 ---
 
